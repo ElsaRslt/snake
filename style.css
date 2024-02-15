@@ -37,18 +37,29 @@ fieldset{
 .contenerForm {
     display: flex;
     flex-direction: row;
-    gap:20px;
     padding: 20px;
+    justify-content: space-around;
+    margin-top: 10px;
+    gap: 30px;
 }
 
 .questionInit{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 #score {
     margin: 50px;
     text-align: center;
     font-family: 'Sixtyfour';
+}
+
+select{
+    border: 1px solid black;
+    background-color: antiquewhite;
+    font-family: 'Sixtyfour';
+    font-size: 13px;
+    height: 30px;
+    
 }
