@@ -49,7 +49,9 @@ colorGame.addEventListener('change', intiGame);
 const selectColor = document.getElementById("colorSnake");
 selectColor.addEventListener('change', intiGame);
 
+// selectionner la zone de score 
 
+let scoreHTML = document.getElementById("score");
 
 function intiGame() {
 
@@ -187,12 +189,14 @@ function intiGame() {
             clearInterval(game)
         }
 
-        // mise à jour des reultats
+        // mise à jour des resultats
         snake.unshift(newHead);
-        ctx.fillStyle = "red"
-        ctx.font = "30px Arial"
-        ctx.fillText(score, 2 * blockSize, 1.6 * blockSize)
+        //ctx.fillStyle = "red"
+        //ctx.font = "30px Arial"
+        // ctx.fillText(score, 2 * blockSize, 1.6 * blockSize)
         //console.log("coucou")
+
+        scoreHTML.innerHTML="Score: " + score;
     }
 
     // si le snake se touche tout seul comme un gland car c'esr un snake 

@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -10,12 +10,13 @@ h1{
 }
 
 body{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     background :linear-gradient(135deg, #8fc201, #000000) ;
     color: antiquewhite;
     font-family: 'Sixtyfour';
+    margin-bottom:1000px ;
 }
 
 #canvas{
@@ -23,6 +24,8 @@ body{
     border: 2px solid black;
     margin: auto;
     display: block;
+    margin-bottom: 30px;
+    
 }
 
 fieldset{
@@ -42,4 +45,10 @@ fieldset{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+#score {
+    margin: 50px;
+    text-align: center;
+    font-family: 'Sixtyfour';
 }
