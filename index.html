@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Exo De Quentin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sixtyfour&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Jeu Du Snake</h1>
+
+    <fieldset>
+            <legend>Vos préférences pour le jeu</legend>
+            <form action="prefdejeu"></form>
+            <div class="contenerForm">
+                <div class="questionInit">
+                    <label for="taillePlateau">Taille du plateau</label>
+                    <select name="taillePlateau" id="tailleCanvas">
+                        <option value= 600 >Grand</option>
+                        <option value= 500 >Moyen</option>
+                        <option value= 400 >Petit</option>
+                    </select>
+                </div>
+            
+                <div class="questionInit">
+                    <label for="vitesse">Vitesse du Serpent</label>
+                    <select name="vitesse" id="vitesseSnake">
+                        <option value="100">Rapide</option>
+                        <option value="250">Vitesse Moyenne</option>
+                        <option value=400 >Lent</option>
+                    </select>
+                </div>
+
+                <div class="questionInit" >
+                    <label for="colorSnake">Couleur de la tête du serpent</label>
+                    <select name="colorSnake" id="colorSnake">
+                        <option value= "#6fdb49" >Vert</option>
+                        <option value= "#577bf9" >Bleu</option>
+                        <option value= "black" >Noir</option>
+                    </select>
+                </div>
+
+                <div class="questionInit">
+                    <label for="colorBgc">Couleur du plateau</label>
+                    <select name="colorBgc" id="colorBgc">
+                        <option value= "black" >Noir</option>
+                        <option value= "#79cbca" >Bleu</option>
+                        <option value= "#8fc20" >Vert</option>
+                    </select>
+                </div>
+            </div>
+            </form>
+        <canvas  id="canvas"></canvas> 
+    </fieldset>
+    
+</body>
+
+<script src="script.js"></script>
+</html>

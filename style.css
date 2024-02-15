@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Sixtyfour';
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background :linear-gradient(135deg, #8fc201, #000000) ;
+    color: antiquewhite;
+    font-family: 'Sixtyfour';
+}
+
+#canvas{
+    background-color: black;
+    border: 2px solid black;
+    margin: auto;
+    display: block;
+}
+
+fieldset{
+    margin: 50px;
+    border: 2px solid black;
+
+}
+
+.contenerForm {
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    padding: 20px;
+}
+
+.questionInit{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
